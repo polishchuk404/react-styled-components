@@ -131,8 +131,8 @@ export default class SignUp extends React.Component{
                 <CheckboxDiv>
                     <Checkbox
                         checked={!this.state.checked}
-                    label="I want to receive inspiration, marketing promoting  and updates via email."
-                    onChange={this.handleCheckboxChange}/>
+                        label="I want to receive inspiration, marketing promoting  and updates via email."
+                        onChange={this.handleCheckboxChange}/>
                 </CheckboxDiv>
                 <SignButton type = "button"
                             style={{width:'325px'}}

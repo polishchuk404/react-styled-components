@@ -15,6 +15,7 @@ export const Form = styled.form`
   margin: 0 auto;
   padding-top: 40px;
 `;
+
 export const Logo = styled.div`
 display: flex;
 align-item: center;
@@ -46,18 +47,17 @@ export const Input = styled.input`
 `;
 export const SignButton = styled.button`
 display: block;
-    width: 300px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    background: #90caf9;
-    border-radius: 3px;
-    height: 35px;
-    margin: 20px auto 0;
-    color: #121212;
-    cursor: pointer;
-    transition : .5s;
-   
-:hover{
+width: 300px;
+font-family: 'Roboto', sans-serif;
+font-weight: bold;
+background: #90caf9;
+border-radius: 3px;
+height: 35px;
+margin: 20px auto 0;
+color: #121212;
+cursor: pointer;
+transition : .5s;
+&:&hover{
 background-color: aqua;
 }
    
@@ -76,7 +76,7 @@ font-size: 10px;
 cursor: pointer;
 margin-top: 0;
 transition : .3s;
-:hover{
+&:hover{
 color: white;
 }
 `;
@@ -112,7 +112,7 @@ export default class SignIn extends React.Component {
               break;
           case 'password':
               passwordValid = value.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/)!=null;
-                break;
+              break;
           default:
               break;
         }
